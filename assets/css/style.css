@@ -33,7 +33,7 @@
     --border: #253046; /* slate-800-ish */
     --card-bg: #0f172a; /* slate-900 */
     --row-alt: #0d1320;
-  --thead-bg: #111827; /* slate-900/800 */
+    --thead-bg: #111827; /* slate-900/800 */
     --accent: #66b3ff; /* lighten accent for contrast */
   }
 }
@@ -174,17 +174,32 @@ footer {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 172px 1fr;
+  display: flex;
+  flex-direction: row;
   gap: var(--space-4);
   align-items: center;
   margin: var(--space-6) 0 var(--space-5);
-  padding: var(--space-4);
+  padding: var(--space-4) var(--space-6);
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 600px;
+}
+
+.hero-content p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
 .hero img {
   width: 172px;
   height: 172px;

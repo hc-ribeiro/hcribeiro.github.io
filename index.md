@@ -3,23 +3,21 @@ layout: default
 title: Home
 ---
 
+<h1>Hermeson Ribeiro</h1>
 <div class="hero">
   <img src="/portfolio/assets/img/profile.jpeg" alt="Profile" width="172" height="172" />
-  <div>
-    <h1>Hermeson Ribeiro</h1>
-    <p>Welcome to my portfolio. Below you can view and download my résumé, and find quick links.</p>
-    <div class="badges">
-  <a href="/resume/" class="btn">View Résumé</a>
-  <a href="/portfolio/assets/docs/hermeson-ribeiro-resume.pdf" download class="btn">Download PDF</a>
-    </div>
+  <div class="hero-content">
+
+  <p>Hi I'm a full-stack developer with 15+ years of experience designing and building robust software solutions, especially in the financial sector.
+I thrive at the intersection of technology and business value, translating complex requirements into systems that make life easier for users.
+I’m currently focused on cloud-native architectures. I enjoy experimenting with new languages, stacks, and tools, and prototyping alternative approaches to the solutions I use in production.</p>
   </div>
 </div>
 
-## About Me
+## Resume
 
-Hi, I’m Hermeson Ribeiro, a full-stack developer with 15+ years of experience designing and building robust software solutions, especially in the financial sector.
-I thrive at the intersection of technology and business value, translating complex requirements into systems that make life easier for users.
-I’m currently focused on cloud-native architectures. I enjoy experimenting with new languages, stacks, and tools, and prototyping alternative approaches to the solutions I use in production.
+<a href="/portfolio/resume/" class="btn">View Résumé</a>
+<a href="/portfolio/assets/docs/hermeson-ribeiro-resume.pdf" download class="btn">Download PDF</a>
 
 ## Projects
 
