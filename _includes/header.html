@@ -2,6 +2,9 @@
   <div class="wrapper">
     <nav class="site-nav">
       <div class="nav-left">
+        <a class="nav-social" href="mailto:{{ site.email }}" aria-label="Email"
+          >{{ site.email }}</a
+        >
         <a href="https://github.com/{{ site.github_username }}">
           <svg class="svg-icon">
             <use
@@ -18,14 +21,62 @@
           </svg>
           <span class="username">{{ site.linkedin_username }}</span>
         </a>
-        <a class="nav-social" href="mailto:{{ site.email }}" aria-label="Email"
-          >{{ site.email }}</a
-        >
       </div>
       <div class="nav-right">
         <a class="page-link" href="{{ '/' | relative_url }}">Home</a>
         <a class="page-link" href="{{ '/resume/' | relative_url }}">Résumé</a>
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle dark mode"
+          title="Toggle theme"
+        >
+          🌙
+        </button>
       </div>
     </nav>
   </div>
+  <script>
+    (function () {
+      const storageKey = "theme";
+      const btn = document.getElementById("theme-toggle");
+      const prefersDark =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      function applyTheme(theme) {
+        if (theme === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+          if (btn) {
+            btn.textContent = "☀️";
+            btn.setAttribute("aria-label", "Switch to light mode");
+          }
+        } else if (theme === "light") {
+          document.documentElement.setAttribute("data-theme", "light");
+          if (btn) {
+            btn.textContent = "🌙";
+            btn.setAttribute("aria-label", "Switch to dark mode");
+          }
+        } else {
+          document.documentElement.removeAttribute("data-theme");
+        }
+      }
+
+      const saved = localStorage.getItem(storageKey);
+      const initial = saved || (prefersDark ? "dark" : "light");
+      applyTheme(initial);
+
+      if (btn) {
+        btn.addEventListener("click", function () {
+          const current =
+            document.documentElement.getAttribute("data-theme") ||
+            (prefersDark ? "dark" : "light");
+          const next = current === "dark" ? "light" : "dark";
+          localStorage.setItem(storageKey, next);
+          applyTheme(next);
+        });
+      }
+    })();
+  </script>
 </header>
