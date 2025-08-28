@@ -9,8 +9,8 @@ title: Home
     <h1>Hermeson Ribeiro</h1>
     <p>Welcome to my portfolio. Below you can view and download my résumé, and find quick links.</p>
     <div class="badges">
-      <a href="/resume/" class="btn">View Résumé</a>
-      <a href="/(en)curriculum-vitae.pdf" download class="btn">Download PDF</a>
+      <a href="/portfolio/resume/" class="btn">View Résumé</a>
+      <a href="/portfolio/assets/docs/hermeson-ribeiro-resume.pdf" download class="btn">Download PDF</a>
     </div>
   </div>
 </div>
