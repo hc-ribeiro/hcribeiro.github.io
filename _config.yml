@@ -22,7 +22,7 @@ title: Hermeson Ribeiro
 email: hc.ribeiro@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   I'm a software developer based in Brazil. This is my portfolio site.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/portfolio" # the subpath of your site, e.g. /blog
 url: "https://hcribeiro.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: hc-ribeiro
 github_username:  hc-ribeiro

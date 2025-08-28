@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div class="hero">
-  <img src="/assets/img/profile.jpeg" alt="Profile" width="172" height="172" />
+  <img src="/portfolio/assets/img/profile.jpeg" alt="Profile" width="172" height="172" />
   <div>
     <h1>Hermeson Ribeiro</h1>
     <p>Welcome to my portfolio. Below you can view and download my résumé, and find quick links.</p>
